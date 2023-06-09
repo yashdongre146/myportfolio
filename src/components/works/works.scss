@@ -1,0 +1,163 @@
+@import "../../global.scss";
+
+.works {
+  background-color: crimson;
+  .slider {
+    position: absolute;
+    left: 0;
+    display: flex;
+    transition: all 1s ease-out;
+    @include mobile{
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .works-container {
+      display: flex;
+      width: 100vw;
+
+      .works-left {
+        flex: 3;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 50px;
+          cursor: pointer;
+          @include mobile{
+            display: none;
+          }
+        }
+      }
+
+      .works-center {
+        flex: 6;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .center-container {
+          height: 65%;
+          width: 100%;
+          background-color: white;
+          border-radius: 20px;
+          display: flex;
+          overflow-y: hidden;
+
+          @include mobile{
+            width: 80%;
+            height: 150px;
+            margin: 15px 0px;
+          }
+
+          .container-left {
+            flex: 4;
+            height: 100%;
+            width: 100%;
+            padding: 0px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mobile{
+              width: 100%;
+              height: 100%;
+            }
+
+            .item-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              height: 50%;
+              width: 100%;
+
+              .img-container {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgb(245, 179, 155);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow-y: hidden;
+                @include mobile{
+                  width: 20px;
+                  height: 20px;
+                }
+
+                img {
+                  width: 25px;
+                  @include mobile{
+                    width: 15px;
+                  }
+                }
+              }
+
+              h2 {
+                font-size: 20px;
+                @include mobile{
+                  font-size: 13px;
+                }
+              }
+
+              p {
+                font-size: 15px;
+                @include mobile{
+                  display: none;
+                }
+              }
+
+              span {
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .container-right {
+            height: 100%;
+            flex: 8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            .img-container {
+              overflow: hidden;
+
+              img {
+                width: 400px;
+                transform: rotate(-10deg);
+              }
+            }
+          }
+        }
+      }
+
+      .works-right {
+        flex: 3;
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 50px;
+          cursor: pointer;
+          @include mobile{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
