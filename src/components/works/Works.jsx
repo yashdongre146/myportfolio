@@ -8,21 +8,21 @@ const Works = () => {
   const data = [
     {
       id: '1',
-      icon: '/assets/mobile.png',
+      icon: 'assets/mobile.png',
       title: 'Web Design',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque eius',
       img: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930'
     },
     {
       id: '2',
-      icon: '/assets/globe.png',
+      icon: 'assets/globe.png',
       title: 'Mobile Application',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque eius',
       img: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930'
     },
     {
       id: '3',
-      icon: '/assets/writing.png',
+      icon: 'assets/writing.png',
       title: 'Branding',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque eius',
       img: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930'
