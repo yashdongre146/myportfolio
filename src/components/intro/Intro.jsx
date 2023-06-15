@@ -14,11 +14,11 @@ const Intro = () => {
       strings: ['Developer', 'Designer', 'Content Creator' ] })
   },[])
 
-  return (
+  return ( 
     <div className="intro" id="intro">
       <div className="left">
         <div className="img-container">
-          <img src="assets/profile.jpg" alt="" />
+          <img src="assets/profile.jpg" alt="YAsh" />
         </div>
       </div>
       <div className="right">

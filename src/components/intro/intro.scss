@@ -15,12 +15,13 @@
         .img-container{
             width: 770px;
             height: 700px;
-            background-color: crimson;
+            background-color: white;
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             float: right;
+
             @include mobile{
                 align-items: flex-start;
             }
@@ -35,17 +36,22 @@
     }
     .right{
         flex: 0.5;
+        @include mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .wrapper{
             width: 100%;
             height: 100%;
-            margin-left: 50px;
+            padding-left: 50px;
             display: flex;
             justify-content: center;
             flex-direction: column;
 
             @include mobile{
                 align-items: center;
-                padding-left: 0;  
+                padding-left: 0px;
             }
 
             h1{
@@ -60,11 +66,9 @@
             }
             h3{
                 font-size: 30px;
-
                 @include mobile{
                     font-size: 20px;
                 }
-
 
                 .animated-text{
                     font-size: inherit;
@@ -89,6 +93,9 @@
             left: 70%;
             font-size: 40px;
             color: black;
+            @include mobile{
+                left: auto;
+            }
         }
     }
 

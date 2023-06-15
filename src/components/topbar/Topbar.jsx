@@ -27,4 +27,3 @@ const Topbar = ({openMenu, setMenu}) => {
 }
 
 export default Topbar
-
